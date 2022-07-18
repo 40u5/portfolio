@@ -1,0 +1,59 @@
+body{
+    background-image: linear-gradient(purple, white);
+    background-repeat: no-repeat;
+}
+
+h1{
+    padding: 40px;
+    font-size: 60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+}
+
+footer{
+    position: absolute;
+    bottom: 50px;
+}
+
+a{
+    color: black;
+}
+
+p{
+    text-align: right;
+}
+
+#projects{
+    position:relative; left:600px; top:-130px
+}
+
+#experience{
+    position:relative; left:950px; top:-225px
+}
+
+#education{
+    position:relative; left:1300px; top:-302px
+}
+
+.drop-down-menu{
+    border-radius: 40px;
+    border-bottom:none;
+    border-right:none;
+    border-left: none;
+    font-size: 30px;
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    
+}
+
+.drop-down-menu:hover{
+    background: black;
+    color:white;
+    cursor: pointer;
+}
+
