@@ -2,21 +2,41 @@
 <head>
     <title>front - page</title>
     <link rel="stylesheet" href="style.css">
+    <base target="_blank">
     <!--rel=stylesheet for css-->
 </head>
 
 <body>
     <h1>Aous Alomari</h1>
-    <button onclick="myFunction()" class="drop-down-menu" id="projects">Projects &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#9660</button>
-    <div class="drop-down-content">
-        <a href="#">this</a>
+    <div class="dropdown">
+        <button onclick="myFunction('prjct')" class="drop-down-menu" id="projects">Projects &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &#9660</button>
+        <button onclick="myFunction('exp')" class="drop-down-menu" id="experience">Experience &nbsp &nbsp &nbsp &nbsp&#9660</button>
+        <button onclick="myFunction('ed')" class="drop-down-menu" id="education">Education &nbsp &nbsp &nbsp &nbsp &nbsp&#9660</button>
+        <!--makes buttons that activate function when clicked on-->
+
+            <div class="drop-down-content" id="prjct">
+            <a target="_self" href="#" class="drop-down-button">Portfolio Website</a>
+            </div>
+            
+            <div class="drop-down-content" id="exp">
+            <a class="drop-down-button">Tim Hortons</a>
+            </div>
+
+            <div class="drop-down-content" id="ed">
+            <a href="http://www.yrdsb.ca/schools/trudeau.hs/Pages/default.aspx" class="drop-down-button">Pierre Elliott Trudeau High School</a>
+            </div>
+            <!--drop down options-->
     </div>
-    </br>
-    <button onclick="myFunction()" class="drop-down-menu" id="experience">Experience &nbsp &nbsp &nbsp &nbsp&#9660</button>
-    </br>
-    <button onclick="myFunction()" class="drop-down-menu" id="education">Education &nbsp &nbsp &nbsp &nbsp &nbsp&#9660</button>
-    
+
 </body>
+
 <footer>
-    <a href="https://github.com/40u5?tab=repositories">github link</a>
+    <a target="_blank" href="https://github.com/40u5?tab=repositories">github link</a>
 </footer>
+
+<script>
+    function myFunction(passedId) {
+      document.getElementById(passedId).classList.toggle("show");
+    }
+    //makes options when drop down button is clicked
+</script>

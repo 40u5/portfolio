@@ -1,42 +1,35 @@
 body{
-    background-image: linear-gradient(purple, white);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(106, 5, 238), white 70%);
+    /*sets background*/
+}
+
+
+html{
+    height: 100%;
+    /*sets background to be for the whole page rather than multiple gradients*/
 }
 
 h1{
-    padding: 40px;
+    padding: 25px;
     font-size: 60px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20;
+    display: inline-block;
 }
 
 footer{
     position: absolute;
+    /*sets the link in the bottom of screen*/
     bottom: 50px;
 }
 
 a{
     color: black;
+    text-decoration: none;
 }
 
-p{
-    text-align: right;
-}
-
-#projects{
-    position:relative; left:600px; top:-130px
-}
-
-#experience{
-    position:relative; left:950px; top:-225px
-}
-
-#education{
-    position:relative; left:1300px; top:-302px
+.dropdown{
+    display: inline-block;
+    margin-left: 250px;
+    /*positions the dropdown menu*/
 }
 
 .drop-down-menu{
@@ -45,15 +38,70 @@ p{
     border-right:none;
     border-left: none;
     font-size: 30px;
-    width: 300px;
     padding: 20px;
     background-color: transparent;
-    
+    width: 300px;
+    /*styles the drop down button*/
 }
 
 .drop-down-menu:hover{
     background: black;
-    color:white;
+    color:rgb(255, 255, 255);
     cursor: pointer;
+    /*styles the drop down button when hovered on*/
 }
 
+.drop-down-content{
+    display: none;
+    position: absolute;
+    /*sets position and makes the options not appear when not clicked on*/
+}
+
+.drop-down-content button{
+    display: inline-block;
+    /*makes the options on different lines*/
+}
+
+.drop-down-content a{
+    display: block;
+    text-align: center;
+    width: 300px;
+}
+
+.drop-down-button:hover{
+    background-color: black;
+    color: white;
+    /*styles the options when hovered on*/
+}
+
+.drop-down-button{
+    padding: 21px 0px;
+    position:relative;
+    border-radius: 40px;
+    font-size: 30px;
+    text-decoration:none;
+    background-color: transparent;
+    width: 300px;
+    border: none;
+    /*styles the options*/
+}
+
+.show{
+    display:block;
+    /*used in function to make options appear when clicked
+      on*/
+}
+
+#experience{
+    margin-left: 25px;
+    margin-right: 25px;
+    /*separates the options*/
+}
+
+#exp{
+    margin-left: 325px;
+}
+
+#ed{
+    margin-left: 660px;
+}
